@@ -22,6 +22,8 @@ print(things)
 allthings = [90,"靜月",True]
 print(allthings)
 
+print("_____________________________________________________________________") #分割線一
+
 #輸出列表中的指定內容(-1代表倒數第一位 -> -x代表倒數第x位 )
 scores = [90,70,50,80,60]
 print(scores[0])
@@ -52,55 +54,62 @@ print(scores)
 scores[0] = 30 
 print(scores)
 
-#延伸列表 : A列表.extend(B列表)
+print("_____________________________________________________________________") #分割線二
+#函式
+
+#1.延伸列表 : A列表.extend(B列表)
 scores = [90,70,50,80,60]
 friends = ["勃起","葳仔","邱寬"]
 scores.extend(friends)
 print(scores)
 
-#延伸列表 : 列表.append(值)
+#2.延伸列表 : 列表.append(值)
 scores = [90,70,50,80,60]
 scores.append(30)
 scores.append(True)
 scores.append("右承")
 print(scores)
 
-#插入列表 : 列表.insert(插入位置,值)
+#3.插入列表 : 列表.insert(插入位置,值)
 scores = [90,70,50,80,60]
 scores.insert(2,30) #將30插入第3位
 print(scores)
 
-#移除列表指定內容 : 列表.remove(值)
+#4.移除列表指定內容 : 列表.remove(值)
 scores = [90,70,50,80,60]
 scores.remove(50)
 print(scores)
 
-#清空列表 : 列表.clear()
+#5.清空列表 : 列表.clear()
 scores = [90,70,50,80,60]
 scores.clear()
 print(scores)
 
-#移除列表最後一位 : 列表.pop()
+#6.移除列表最後一位 : 列表.pop()
 scores = [90,70,50,80,60]
 scores.pop()
 print(scores)
 
-#小到大排列列表 : 列表.sort()
+#7.小到大排列列表 : 列表.sort()
 scores = [90,70,50,80,60]
 scores.sort() #排列所以結果為[50, 60, 70, 80, 90]
 print(scores)
 
-#反轉列表 : 列表.reverse()
+#8.反轉列表 : 列表.reverse()
 scores = [90,70,50,80,60]
 scores.reverse() #反轉所以結果為[60, 80, 50, 70, 90]
 print(scores)
 
-#回傳指定內容在列表中的位置 : 列表.index(值)
+#9.回傳指定內容在列表中的位置 : 列表.index(值)
 scores = [90,70,50,80,60]
 print(scores.index(50)) #50在第三位所以回傳2
 
-#回傳列表中指定內容有機個 : 列表.count(值)
+#10.回傳列表中指定內容有機個 : 列表.count(值)
 scores = [90,70,50,80,60]
 print(scores.count(50)) #因為只有1個50所以回傳1
 scores = [90,70,50,80,60,50,50]
 print(scores.count(50)) #同上回傳3
+
+#11.回傳列表有多少個值
+scores = [90,70,50,80,60]
+print(len(scores)) #因為5個值所以回傳5
