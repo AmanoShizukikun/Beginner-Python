@@ -4,7 +4,6 @@
 #3.猜錯三次就輸了
 #4.要用到while迴圈
 
-#我的解法
 import random
 
 secret_num = (random.randint(0,99))
